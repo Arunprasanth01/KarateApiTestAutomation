@@ -16,5 +16,5 @@ Feature: Checking the JSON response
    * karate.log('\nemail :'+ response.data[0].email)
    # And match response.data[*].email == '#regex[a-z]|.|\\@reqres.in'
     And match response.data[0] contains { email: '#string'}
-	 # And match response.data[0] contains { first_name: '#regex[A-Z][a-z]' }
-	   And match response.data[0] contains { first_name: '#string' }
+   # And match response.data[0] contains { first_name: '#regex[A-Z][a-z]' }
+    And match response.data[0] contains { first_name: '#string' }
